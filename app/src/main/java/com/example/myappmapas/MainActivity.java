@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             lineasg.color(Color.RED);
             mapa.addPolyline(lineasg);
             lineasg.getPoints().clear();
+            obtenerDistancia();
         }
     }
 
@@ -146,6 +147,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void mostrarDistancia(double distanciatotal) {
 
-        Toast.makeText(this, "Distancia total: " + distanciatotal + " metros", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Distancia total: " + distanciatotal + " metros", Toast.LENGTH_LONG).show();
     }
 }
